@@ -1,0 +1,279 @@
+:root{
+    --primaryColor: hsl(251, 76%, 81%);
+    --hoverColor: hsl(270, 81%, 83%);
+    --paleGreen: hsl(276, 75%, 89%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 2%, 16%);
+    --greyText: hsl(0, 0%, 75%);
+    --bgColor: hsl(203, 24%, 66%);
+    --inputColor: hsl(330, 12%, 97%);
+    --inputColor: hsl(154, 14%, 90%);
+  
+  
+    --biggestFontSize:2.5rem;
+    --h1FontSize: 1.5rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: .938rem;
+    --smallFontSize: .813rem;
+    --smallestFontSize: .75rem;
+  }
+
+/* .dashboardPage{
+    /* padding-left: 300px; 
+} */
+
+.link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.icone {
+    margin-right: 10px; 
+    font-size: 25px;
+}
+
+.title{
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.tete {
+    display: flex;
+    align-items: center;
+}
+
+.logo4 {
+    margin-right: 10px; 
+}
+
+.titre{
+    font-size: 20px;
+}
+
+.navigation{
+    position: absolute;
+    width: 350px;
+    height: 100%;
+    transition: 0.5s;
+    overflow: hidden;
+    background: rgb(67, 61, 102);
+}
+
+.navigation.active{
+    width: 80%;
+}
+
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.navigation ul li:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.navigation ul li:nth-child(1){
+    margin-bottom: 40px;
+    pointer-events: none;
+}
+
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: var(--whiteColor);
+}
+
+.navigation ul li:hover a{
+    color: rgb(87, 86, 86);
+}
+
+.navigation ul li a .icone{
+    position: relative;
+    display: block;
+    min-width: 70px;
+    height: 35px;
+    line-height: 75px;
+    text-align: center;
+}
+
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 50px;
+    line-height: 50px;
+    text-align: start;
+    white-space: nowrap;
+}
+
+.navigation ul li:hover a::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 10px var(--whiteColor);
+    pointer-events: none;
+}
+ 
+
+.navigation ul li:hover a::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0 10px var(--whiteColor);
+    pointer-events: none;
+}
+
+.contenus{
+    margin-left: 300px;
+} 
+
+.Haute_Matsiatra{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30%;
+}
+
+.HM{
+    margin-left: -30%;
+}
+
+
+.main{
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    min-height: 100vh;
+    background: var(--whiteColor);
+    transition: 0.5s;
+}
+
+.topbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.toggle{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.search{
+    position: relative;
+    width: 400px;
+    margin: 0 10px;
+}
+
+.search label{
+    position: relative;
+    width: 100%;
+}
+
+.search label input{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    margin-top: 2%;
+    padding-left: 40px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid var(--blackColor);
+}
+
+.search label .icones{
+    position: absolute;
+    margin-top: 19px;
+    margin-left: -98%;
+    font-size: 1.2rem;
+}
+
+.user{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 2.5rem;
+}
+
+.cardBox{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: -15px;
+}
+
+.cardBox .card{
+    position: relative;
+    background: var(--whiteColor);
+    padding: 30px;
+    margin-left: 5%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.cardBox .card .numbers{
+    position: relative;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: var(--primaryColor);
+}
+.cardBox .card .cardName{
+    color: rgb(65, 64, 64);
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+
+.cardBox .card .iconBox{
+    font-size: 3.5rem;
+    color: rgb(102, 100, 100);
+    margin-left: 50%;
+}
+
+.cardBox .card:hover{
+    background: var(--primaryColor);
+}
+
+.cardBox .card:hover .numbers,
+.cardBox .card:hover .cardName,
+.cardBox .card:hover .iconBox{
+    color: var(--whiteColor);
+}

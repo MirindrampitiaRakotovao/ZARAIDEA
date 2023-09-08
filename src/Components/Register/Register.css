@@ -1,0 +1,81 @@
+
+.registerPage {
+    background: url(./RegisterAssets/Vue1.JPG);
+    background-size: cover;
+    background-attachment:fixed ;
+    background-repeat: no-repeat;
+}
+
+.inscription{
+    font-size: 50px;
+    color: var(--primaryColor);
+    font-weight: 600;
+    margin-top: 5%;
+    margin-left: 45%;
+}
+
+.containers{
+    height: 90%;
+    width: 40%;
+    margin: auto;
+    justify-content: space-between;
+    border-radius: 10px;
+    background: linear-gradient(rgba(57, 29, 71, 0.2), rgba(231, 151, 210, 0.2));
+}
+
+.inputs{
+    gap: .5rem;
+    padding: 1.2rem;
+    background: var(--inputColor);
+    border-radius: 10px;
+    width: 500px;
+    margin-left: 15%;
+}
+
+.labels{
+    color: var(--blackColor);
+    font-weight: 400;
+    font-size: 20px;
+    padding: .5rem 0;
+    display: block;
+    margin-left: 15%;
+}
+
+.btns{
+    padding: .8rem;
+    background: var(--primaryColor);
+    border-radius: 10px;
+    color: var(--whiteColor);
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    margin-top: 4%;
+    margin-left: 22%;
+    width: 91%;
+    border: none;
+}
+
+.btns:hover{
+    background: var(--hoverColor);
+    color: var(--blackColor);
+    cursor: pointer;
+}
+  
+.bouton_c{
+    font-size: 25px;
+    margin-left: 40px;
+}
+
+.footerDivs{
+    bottom: 10px;
+    padding: 0 1rem;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.248);
+    width: 500px;
+    border-radius: 10px;
+    margin-left: 22%;
+    right: 0;
+    margin-top: 3%;
+    justify-content: space-between;
+    backdrop-filter: blur(1px);
+  }
